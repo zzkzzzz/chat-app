@@ -1,7 +1,7 @@
 const socket = io();
 
 // elements
-const $messageForm = document.querySelector("#message-from");
+const $messageForm = document.querySelector("#message-form");
 const $messageFormInput = document.querySelector("#message-form-input");
 const $messgaeFromButton = document.querySelector("#message-form-button");
 const $sendLocationButton = document.querySelector("#send-location");
@@ -9,7 +9,8 @@ const $messages = document.querySelector("#messages");
 
 // template
 const messageTemplate = document.querySelector("#message-template").innerHTML;
-const locationTemplate = document.querySelector("#location-template").innerHTML;
+const locationTemplate = document.querySelector("#location-message-template")
+  .innerHTML;
 
 socket.on("message", (message) => {
   console.log(message);
