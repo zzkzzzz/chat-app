@@ -4,9 +4,16 @@
   - target attribute specifies where to open the linked document.
   - `target="_blank"` Opens the document in a new window or tab
   - `target="_self"`  Default. Opens the document in the same window/tab as it was clicked
-- [socket](https://socket.io/)
+- [socket.io](https://socket.io/)
+   -  `socket.emit` `io.emit`    `socket.broadcast.emit`
+   - rooms
+    - `io.to.emit` `socket.broadcast.to.emit`
 - [moment.js](https://momentjs.com/)
   - `moment().format("h:mm a"),`
+- [qs](https://www.npmjs.com/package/qs)
+  - `const { username, room } = Qs.parse(location.search, {
+  ignoreQueryPrefix: true,
+});`
 - auto-scroll
   ``` javascript 
   const autoscroll = () => {
@@ -32,3 +39,5 @@
   }
 };
 ```
+
+  
